@@ -1,8 +1,9 @@
-[gd_scene load_steps=10 format=3 uid="uid://d3upow1qhfede"]
+[gd_scene load_steps=11 format=3 uid="uid://d3upow1qhfede"]
 
 [ext_resource type="PackedScene" uid="uid://dp8mtnju66swl" path="res://scenes/player.tscn" id="1_rp1sd"]
 [ext_resource type="Texture2D" uid="uid://biggtawh0t2mj" path="res://assets/sprites/world_tileset.png" id="2_6pmqq"]
 [ext_resource type="PackedScene" uid="uid://o06ojf7myerx" path="res://scenes/platform.tscn" id="3_wq5ol"]
+[ext_resource type="PackedScene" uid="uid://bry5vqysyg16k" path="res://scenes/coin.tscn" id="4_5d8v0"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_nj7rh"]
 texture = ExtResource("2_6pmqq")
@@ -262,3 +263,9 @@ libraries = {
 "": SubResource("AnimationLibrary_1minv")
 }
 autoplay = "move"
+
+[node name="Area2D" parent="." instance=ExtResource("4_5d8v0")]
+position = Vector2(-392, -56)
+
+[node name="Area2D2" parent="." instance=ExtResource("4_5d8v0")]
+position = Vector2(-426, -56)
